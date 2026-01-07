@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // CHANGE PORT to your .NET API PORT
-const API_URL = "http://localhost:5142/api/products";
+const API_URL = "http://localhost:5001/api/products";
 
 export const getProducts = () => axios.get(API_URL);
 export const getProductById = (id) => axios.get(`${API_URL}/${id}`);
